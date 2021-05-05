@@ -35,6 +35,7 @@
 				<artifactId>maven-release-plugin</artifactId>
 				<version>3.0.0-M4</version>
 				<configuration>
+					<preparationGoals>package</preparationGoals>
 				</configuration>
 			</plugin>
 			<plugin>
