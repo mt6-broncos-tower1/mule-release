@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>2209fc09-4ab4-4f65-a65d-e3ddfddba55b</groupId>
@@ -13,7 +15,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<app.runtime>4.3.0-20210119</app.runtime>
-		<mule.maven.plugin.version>3.4.2</mule.maven.plugin.version>
+		<mule.maven.plugin.version>3.5.1</mule.maven.plugin.version>
 	</properties>
 
 	<scm>
@@ -36,6 +38,16 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
+					<cloudHubDeployment>
+						<uri>https://anypoint.mulesoft.com</uri>
+						<muleVersion>4.3.0</muleVersion>
+						<username>mt6-broncos-0405</username>
+						<password>Logger@123</password>
+						<applicationName>mule-release</applicationName>
+						<environment>Sandbox</environment>
+						<objectStoreV2>true</objectStoreV2>
+						<skipDeploymentVerification>true</skipDeploymentVerification>
+					</cloudHubDeployment>
 				</configuration>
 			</plugin>
 		</plugins>
