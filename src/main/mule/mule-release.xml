@@ -10,7 +10,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	</http:listener-config>
 	<flow name="mule-releaseFlow" doc:id="d9ad8234-c04d-40d4-9b93-72be5a43295d" >
 		<http:listener doc:name="Listener" doc:id="b846d3d1-0ea5-4816-8884-44cc6eaa7455" config-ref="HTTP_Listener_config" path="/"/>
-		<logger level="INFO" doc:name="Logger" doc:id="8aaa2f3c-1aef-4efa-948d-d28165fe4e9a" />
+		<logger level="INFO" doc:name="Logger" doc:id="8aaa2f3c-1aef-4efa-948d-d28165fe4e9a" message="123"/>
 		<ee:transform doc:name="Transform Message" doc:id="95d2e344-bd99-422a-a5a6-331db07c3224" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
